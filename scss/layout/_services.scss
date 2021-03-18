@@ -1,0 +1,72 @@
+.block-services{
+    height: 1500px;
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+    }
+    &__item{
+        width: 33.3%;
+        height: 480px;
+        transition: $standard-transition;
+        position: relative;
+        &_1{
+            background: $blue-dark;
+        }
+        &_2{
+            background: $blue-standard;
+        }
+        &_3{
+            background: $pink;
+        }
+        &_4{
+            background: $blue-light;
+        }
+        &_5{
+            background: $purple-light;
+        }
+        &_6{
+            background: $purple;
+        }
+        &:hover{
+            background-color: transparent;
+        }
+    }
+    &__service-text{
+        @extend %services-text-position;
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: -1;
+    }
+}
+.bottom-services{
+    margin-bottom: 0;
+    &__item{
+        width: 33.3%;
+        height: 240px;
+        padding: 55px 0 0 105px;
+    }
+    &__link{
+        font-size: 28px;
+        color: $blue-dark;
+    }
+    &__text{
+        margin-top: 28px;
+        width: 300px;
+        color: $blue-dark;
+        opacity: 0.5;
+    }
+}

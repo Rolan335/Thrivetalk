@@ -1,0 +1,31 @@
+.block-facts{
+    .container{
+        width: 800px;
+    }
+    height: 800px;
+    padding: 100px 0 0 40%;
+    position: relative;
+    &__title{
+        font-family: $light-font;
+        color: $blue-dark;
+        font-size: 16px;
+    }
+    &__text{
+        margin-top: 225px;
+        font-size: 36px;
+        color: $blue-dark;
+        width: 670px;
+        &_logo{
+            color: $blue-light;
+        }
+    }
+    &__btn{
+        margin-top: 200px;
+    }
+    &__img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,59 @@
+.block-about{
+    height: 900px;
+    background-color: $white;
+    padding: 150px 0 120px 0;
+    position: relative;
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    &__title{
+        color: $blue-dark;
+        font-size: 16px;
+        font-family: $light-font;
+        position: absolute;
+        top: 155px;
+        left: 105px;
+    }
+    &__text{
+        width: 600px;
+        margin: $mr-center;
+        font-size: 24px;
+        color: $blue-dark;
+        line-height: 33.75px;
+    }
+    &__text-bottom{
+        text-align: center;
+        margin: 75px 0 25px 0;
+        color: $blue-dark;
+        opacity: 0.5;
+    }
+    &__services-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__service{
+        width: 25%;
+        height: 360px;
+        transition: $standard-transition;
+        &:hover{
+            box-shadow: 0 0 0 10px inset $white;
+        }
+        &_1{
+            background-color: $pink;
+        }
+        &_2{
+            background-color: $green;
+        }
+        &_3{
+            background-color: $blue-light;
+        }
+        &_4{
+            background-color: $blue-standard;
+        }
+    }
+    &__service-text{
+        @extend %services-text-position;
+    }
+}

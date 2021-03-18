@@ -1,0 +1,10 @@
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    color: $yellow;
+    transition: $standard-transition;
+    &:hover{
+        color: $white;
+        background-color: $yellow;
+    }
+}

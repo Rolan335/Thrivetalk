@@ -1,0 +1,15 @@
+@import "abstracts/variables";
+@import "base/base";
+@import "base/nullstyle";
+@import "base/typography";
+@import "components/services-text";
+@import "components/btn";
+
+//layout
+@import "layout/header";
+@import "layout/advantages";
+@import "layout/about";
+@import "layout/services";
+@import "layout/facts";
+@import "layout/contacts";
+@import "layout/footer";
